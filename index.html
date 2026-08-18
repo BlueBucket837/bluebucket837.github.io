@@ -17,6 +17,14 @@
             background-color: #e64a19;
             padding: 30px 20px;
         }
+        
+        /* Logo Styling */
+        .logo {
+            max-width: 140px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
         h1 {
             margin: 0;
             font-size: 2.5em;
@@ -44,7 +52,7 @@
             color: #ff5722;
         }
 
-        /* Clickable Buttons Styling */
+        /* Clickable Buttons */
         .btn {
             display: inline-block;
             background-color: #ff5722;
@@ -85,10 +93,12 @@
 <body>
 
     <header>
+        <!-- Logo Image Tag -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Rec_Room_logo.png" alt="Rec Room Logo" class="logo">
+        
         <h1>Rec Room Memorial & Revival Hub</h1>
         <p class="subtitle">Preserving memories, photos, and revival updates for the community.</p>
         
-        <!-- Clickable Navigation Bar -->
         <nav>
             <a href="#revivals">Revival Projects</a> | 
             <a href="#yearbook">Community Yearbook</a>
@@ -97,14 +107,12 @@
 
     <div class="container">
         
-        <!-- Section 1: Revival Projects -->
         <div class="card" id="revivals">
             <h2>🚀 Revival Projects</h2>
             <p>Welcome to the hub! We are documenting community-led revival efforts, custom server progress, and news for former Rec Room players.</p>
             <a href="https://github.com/BlueBucket837" target="_blank" class="btn">View GitHub Updates</a>
         </div>
 
-        <!-- Section 2: Yearbook -->
         <div class="card" id="yearbook">
             <h2>📸 Community Yearbook</h2>
             <p>Upload and view saved memories, room photos, and player signatures from over the years.</p>

@@ -43,6 +43,37 @@
             margin-top: 0;
             color: #ff5722;
         }
+
+        /* Clickable Buttons Styling */
+        .btn {
+            display: inline-block;
+            background-color: #ff5722;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Navigation Links */
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             margin-top: 40px;
             padding: 20px;
@@ -56,21 +87,28 @@
     <header>
         <h1>Rec Room Memorial & Revival Hub</h1>
         <p class="subtitle">Preserving memories, photos, and revival updates for the community.</p>
+        
+        <!-- Clickable Navigation Bar -->
+        <nav>
+            <a href="#revivals">Revival Projects</a> | 
+            <a href="#yearbook">Community Yearbook</a>
+        </nav>
     </header>
 
     <div class="container">
         
-        <!-- Section 1: Revival Updates -->
-        <div class="card">
+        <!-- Section 1: Revival Projects -->
+        <div class="card" id="revivals">
             <h2>🚀 Revival Projects</h2>
             <p>Welcome to the hub! We are documenting community-led revival efforts, custom server progress, and news for former Rec Room players.</p>
+            <a href="https://github.com/BlueBucket837" target="_blank" class="btn">View GitHub Updates</a>
         </div>
 
-        <!-- Section 2: Yearbook & Memories -->
-        <div class="card">
+        <!-- Section 2: Yearbook -->
+        <div class="card" id="yearbook">
             <h2>📸 Community Yearbook</h2>
             <p>Upload and view saved memories, room photos, and player signatures from over the years.</p>
-            <p><em>Yearbook photo gallery coming soon!</em></p>
+            <a href="#yearbook" class="btn" onclick="alert('Yearbook submissions opening soon!'); return false;">Submit a Photo</a>
         </div>
 
     </div>
